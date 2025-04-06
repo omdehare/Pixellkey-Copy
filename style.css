@@ -19,9 +19,15 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 17px 20px;
+  padding: 15px min(75px, 8%);
   background: #fff;
 }
+
+/* @media (max-width: 410px) {
+  .mt-containtent > h4 > span {
+    font-size: 25px;
+  }
+} */
 
 .logo {
   width: 150px;
@@ -63,7 +69,7 @@ header {
   outline: none;
 }
 
-.menu-btn.active {
+.menu-btn:hover {
   transform: rotate(0deg);
 }
 
@@ -90,14 +96,7 @@ header {
 .main-text {
   background: rgb(14, 22, 3);
   color: #fff;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-block-start: 30px;
-  padding-block-end: 20px;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
+  padding: 20px min(6vw, 40px);
 }
 
 .main-text > .mt-heading {
@@ -108,7 +107,7 @@ header {
   padding-block-end: 20px;
 }
 .main-text > .mt-heading > h4 > span{
-  font-size: 42px;
+  font-size: min(10vw, 70px);
   font-weight: 500;
 }
 
@@ -123,9 +122,8 @@ header {
 }
 
 .mt-containtent > h4 {
-  font-size: 28px;
+  font-size: min(6.5vw, 55px);
   margin-bottom: 20px;
-  line-height: 35px;
 }
 
 .mt-containtent > p {
