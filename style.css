@@ -18,16 +18,11 @@ header {
   width: 100%;
   height: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 15px min(75px, 8%);
   background: #fff;
 }
-
-/* @media (max-width: 410px) {
-  .mt-containtent > h4 > span {
-    font-size: 25px;
-  }
-} */
 
 .logo {
   width: 150px;
@@ -45,8 +40,8 @@ header {
 }
 
 .menu-btn {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #000000;
   display: flex;
@@ -55,6 +50,13 @@ header {
   flex-direction: column;
   gap: 3.5px;
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .menu-btn {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .bar {
@@ -106,7 +108,7 @@ header {
   border-bottom-style: solid;
   padding-block-end: 20px;
 }
-.main-text > .mt-heading > h4 > span{
+.main-text > .mt-heading > h4 > span {
   font-size: min(10vw, 70px);
   font-weight: 500;
 }
@@ -142,21 +144,20 @@ header {
   align-items: center;
 }
 
-.mt-containtent > .read-more:hover{
+.mt-containtent > .read-more:hover {
   border-bottom: 2.5px solid white;
 }
 
 .mt-containtent > .read-more > a {
-  color: #3CDE0D;
+  color: #3cde0d;
   text-decoration: none;
 }
 
 .mt-containtent > .read-more > svg {
   height: 20px;
   width: 20px;
-  fill: #3CDE0D;
+  fill: #3cde0d;
   transform: rotate(-45deg);
   transition: all 0.3s ease-in-out;
   outline: none;
 }
-

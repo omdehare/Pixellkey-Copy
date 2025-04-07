@@ -1,6 +1,6 @@
 
-const menuContainer = document.querySelector('.menu-btn');
+// const menuContainer = document.querySelector('.menu-btn');
 
-menuContainer.addEventListener('click', () => {
-  menuContainer.classList.toggle('active');
-});
+// menuContainer.addEventListener('click', () => {
+//   menuContainer.classList.toggle('active');
+// });
